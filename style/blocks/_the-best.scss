@@ -1,0 +1,38 @@
+.the-best{
+    .container{
+        justify-content: center;
+    }
+
+    .section-header{
+        color: $GRAY;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    background-image: url(../image/the-best/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .the-best__items{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .the-best__item{
+        display: flex;
+        flex-direction: column;
+        max-width: 281px;
+        img{
+            height: 89px;
+        }
+        h4{
+            text-align: center;
+            margin: 30px 0 25px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
