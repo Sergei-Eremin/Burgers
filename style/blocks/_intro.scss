@@ -24,7 +24,7 @@
         max-width: 670px;
         flex-grow: 1;
 
-        ul {
+        .navigation__items {
             list-style-position: inside;
             display: flex;
             color: $WHITE;
@@ -34,7 +34,7 @@
             justify-content: space-between;
             flex-basis: 670px;
         }
-        li{
+        .navigation__item{
             &:first-child{
                 list-style-type: none;
             }
@@ -59,13 +59,10 @@
             max-width: 410px;
             margin-top: 133px;
 
-            p:first-child{
-                font-family: "gagalin";
-                font-size: 65px;
+            .section-header_yellow{
                 color: $YELLOW;
-                letter-spacing: 4px;
             }
-            p:last-child{
+            p{
                 font-family: "lifehack";
                 color: $WHITE;
                 font-size: 72px;

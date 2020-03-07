@@ -61,16 +61,11 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  
-  .wrapper__container {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
   .section{
     height: 100vh;
 
     .section-header{
+      color: $GRAY;
       font-size: 72px;
       font-family: "gagalin";
       text-transform: uppercase;
