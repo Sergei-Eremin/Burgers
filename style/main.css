@@ -479,6 +479,8 @@ svg {
 .the-best .the-best__item h4 {
   text-align: center;
   margin: 30px 0 25px;
+  font-family: 'lifehack';
+  font-size: 24px;
 }
 
 .the-best .the-best__item p {
@@ -687,10 +689,6 @@ svg {
 
 .team .team-members .team-member_active .section-header {
   color: #f9b43b;
-}
-
-.reviews .container_no-max-width {
-  max-width: none;
 }
 
 .reviews .reviews__items {
