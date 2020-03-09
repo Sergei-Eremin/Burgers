@@ -5,6 +5,10 @@
     background-position: center;
     padding: 12px 0 40px 0;
 
+    .container{
+        justify-content: space-between;
+    }
+
     .main-header {
         position: relative;
         height: 80px;
