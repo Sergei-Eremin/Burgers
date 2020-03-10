@@ -51,12 +51,12 @@
         .intro-burger__image{
             position: relative;
             margin: 0 12px 0 37px;
-            &::before{
-                content: url(../image/intro/drops.svg);
-                position: absolute;
-                top: 70px;
-                left: -36px;
-            }
+        }
+        .intro-burger__svg-drops{
+            position: absolute;
+            top: 265px;
+            width: 451px;
+            height: 241px;
         }
 
         .intro-burger__info{
@@ -78,5 +78,9 @@
 
     .arrow-down{
         text-align: center;
+        .arrow-down-svg{
+            width: 29px;
+            height: 14px;
+        }
     }
 }

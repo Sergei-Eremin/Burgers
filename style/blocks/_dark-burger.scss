@@ -17,6 +17,10 @@
             width: 60px;
             height: 60px;
             text-align: center;
+             
+            .dark-burger__kkal-svg{
+                height: 60px;
+            }  
 
             span{
                 font-family: "gagalin";
@@ -25,7 +29,7 @@
                 display: block;
                 &:nth-child(2){
                     font-size: 20px;
-                    margin: -38px 0 10px;
+                    margin: -38px 0 10px 2px;
                 }
             }
         }
@@ -42,11 +46,15 @@
             text-align: center;
             background: #F08C33;
             border-radius: 4px;
+
+            .dark-burger__burger-svg{
+                height: 44px;
+            }
             div{
                 font-family: "gagalin";
                 font-size: 14px;
                 margin-top: 9px;
-            }           
+            }      
         }
 
     }
