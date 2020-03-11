@@ -4,4 +4,76 @@
     background-repeat: no-repeat;
     background-size: cover;
     
+    >.section-header{
+        margin-left: 6.25rem;
+        margin-top: 6.875rem;
+    }
+
+    .menu-accordion{
+        margin-left: auto;
+
+        .menu-accordion__items{
+            list-style-type: none;
+            display: flex;
+            height: 100%;
+
+        }
+
+        .menu-accordion__item{
+            display: flex;
+            color: $WHITE;
+
+            .menu-accordion__item-text{
+                width: 0;
+                overflow: hidden;
+            }
+            &.menu-accordion__item_active {
+                .menu-accordion__item-text{
+                    padding: 20px 10px 0;
+                    width: 540px;
+                }
+            }
+
+            &.menu-accordion__item_meat .menu-accordion__item-link{
+                background-image: url(../image/menu/meat-background.png);
+            }
+            &.menu-accordion__item_vegan .menu-accordion__item-link{
+                background-image: url(../image/menu/vegan-background.png);
+            }
+            &.menu-accordion__item_diet .menu-accordion__item-link{
+                background-image: url(../image/menu/diet-background.png);
+            }
+
+
+            .menu-accordion__item-link{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 80px;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                &::before{
+                    height: inherit;
+                    content: '';
+                    background-color: rgba(20, 20, 20, 0.7);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .section-header_white{
+                transform: rotate(-90deg);
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                margin-top: auto;
+                padding-left: 3.75rem;
+                white-space: nowrap;
+            }
+        }
+    }
 }

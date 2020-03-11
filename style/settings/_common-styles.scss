@@ -72,12 +72,14 @@ html {
     font-family: "gagalin";
     text-transform: uppercase;
     font-weight: 400;
-    line-height: 64px;
+    line-height: 4.5rem;
   }
   .section-header_yellow{
     color: $YELLOW;
   }
-
+  .section-header_white{
+    color: $WHITE;
+  }
   .btn {
     background-color: $TOMATO;
     color: $WHITE;

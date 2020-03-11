@@ -277,11 +277,15 @@ svg {
   font-family: "gagalin";
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 4.5rem;
 }
 
 .section-header_yellow {
   color: #f9b43b;
+}
+
+.section-header_white {
+  color: #fff;
 }
 
 .btn {
@@ -454,7 +458,7 @@ svg {
 
 .the-best .section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .the-best .the-best__items {
@@ -475,18 +479,18 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 281px;
+  max-width: 17.5625rem;
 }
 
 .the-best .the-best__item .the-best__svg {
-  height: 89px;
+  height: 5.5625rem;
 }
 
 .the-best .the-best__item h4 {
   text-align: center;
-  margin: 30px 0 25px;
+  margin: 1.875rem 0 1.5625rem;
   font-family: 'lifehack';
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .the-best .the-best__item p {
@@ -617,7 +621,7 @@ svg {
 
 .team .team-people {
   width: 50%;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 6.25rem;
   background-color: #2f3234;
   opacity: .9;
   height: 100%;
@@ -634,7 +638,7 @@ svg {
 }
 
 .team .section-header {
-  margin-bottom: 46px;
+  margin-bottom: 2.875rem;
 }
 
 .team .team-members {
@@ -642,28 +646,28 @@ svg {
 }
 
 .team .team-members .team-member {
-  margin-bottom: 40px;
-  padding-left: 20px;
+  margin-bottom: 2.5rem;
+  padding-left: 1.25rem;
 }
 
 .team .team-members .section-header {
   display: inline-block;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
   color: #fff;
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
   position: relative;
 }
 
 .team .team-members .section-header::before {
   position: absolute;
   content: '';
-  left: -20px;
-  top: 5px;
+  left: -1.25rem;
+  top: 0.3125rem;
   width: 0;
   height: 0;
-  border: 5px solid transparent;
-  border-top: 5px solid #f9b43b;
+  border: 0.3125rem solid transparent;
+  border-top: 0.3125rem solid #f9b43b;
 }
 
 .team .team-members .team-member__container {
@@ -679,7 +683,7 @@ svg {
 }
 
 .team .team-members .team-member__image {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .team .team-members .team-member__image img {
@@ -687,13 +691,13 @@ svg {
 }
 
 .team .team-members .team-member__info {
-  max-width: 270px;
+  max-width: 16.875rem;
   font-weight: 300;
 }
 
 .team .team-members .team-member__info h5 {
   font-weight: bold;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .team .team-members .team-member_active .team-member__container {
@@ -711,6 +715,88 @@ svg {
   background-image: url(../image/menu/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.menu > .section-header {
+  margin-left: 6.25rem;
+  margin-top: 6.875rem;
+}
+
+.menu .menu-accordion {
+  margin-left: auto;
+}
+
+.menu .menu-accordion .menu-accordion__items {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.menu .menu-accordion .menu-accordion__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.menu .menu-accordion .menu-accordion__item .menu-accordion__item-text {
+  width: 0;
+  overflow: hidden;
+}
+
+.menu .menu-accordion .menu-accordion__item.menu-accordion__item_active .menu-accordion__item-text {
+  padding: 20px 10px 0;
+  width: 540px;
+}
+
+.menu .menu-accordion .menu-accordion__item.menu-accordion__item_meat .menu-accordion__item-link {
+  background-image: url(../image/menu/meat-background.png);
+}
+
+.menu .menu-accordion .menu-accordion__item.menu-accordion__item_vegan .menu-accordion__item-link {
+  background-image: url(../image/menu/vegan-background.png);
+}
+
+.menu .menu-accordion .menu-accordion__item.menu-accordion__item_diet .menu-accordion__item-link {
+  background-image: url(../image/menu/diet-background.png);
+}
+
+.menu .menu-accordion .menu-accordion__item .menu-accordion__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 80px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu .menu-accordion .menu-accordion__item .menu-accordion__item-link::before {
+  height: inherit;
+  content: '';
+  background-color: rgba(20, 20, 20, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu .menu-accordion .menu-accordion__item .section-header_white {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: auto;
+  padding-left: 3.75rem;
+  white-space: nowrap;
 }
 
 .reviews .reviews__items {
@@ -741,7 +827,7 @@ svg {
 .reviews .reviews__item-review {
   background-color: rgba(20, 20, 20, 0.7);
   height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,21 +849,21 @@ svg {
 }
 
 .reviews .reviews__item-review .reviews__item-wrap {
-  max-width: 225px;
+  max-width: 14.0625rem;
 }
 
 .reviews .reviews__item-review .section-header_mini-white {
   color: #fff;
-  font-size: 14px;
-  line-height: 14px;
-  margin-bottom: 30px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .reviews .reviews__item-review .reviews__item-text {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   color: #fff;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .reviews .reviews__item-review .reviews__item-btn {
