@@ -19,7 +19,7 @@
     .reviews__item-review{
         background-color: rgba(20, 20, 20, 0.7);
         height: 100%;
-        padding: 20px;
+        padding: 1.25rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,19 +30,19 @@
             opacity: 1;
         }
         .reviews__item-wrap{
-            max-width: 225px;
+            max-width: 14.0625rem;
         }
         .section-header_mini-white{
             color: $WHITE;
-            font-size: 14px;
-            line-height: 14px;
-            margin-bottom: 30px;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            margin-bottom: 1.875rem;
         }
         .reviews__item-text{
-            margin-bottom: 18px;
+            margin-bottom: 1.125rem;
             color: $WHITE;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
         }
         .reviews__item-btn{
             background-color: $GRAY;

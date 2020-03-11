@@ -9,7 +9,7 @@
     }
     .team-people{
         width: 50%;
-        padding: 0 0 0 100px;
+        padding: 0 0 0 6.25rem;
         background-color: $GRAY;
         opacity: .9;
         height: 100%;
@@ -18,33 +18,32 @@
         justify-content: center;
     }
     .section-header{
-        color: $YELLOW;
-        margin-bottom: 46px;
+        margin-bottom: 2.875rem;
     }
     .team-members{
         list-style-type: none;
         .team-member{
-            margin-bottom: 40px;
-            padding-left: 20px;
+            margin-bottom: 2.5rem;
+            padding-left: 1.25rem;
             
         }
 
         .section-header{
             display: inline-block;
-            font-size: 14px;
-            line-height: 14px;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
             color: $WHITE;
-            margin-bottom: 17px;
+            margin-bottom: 1.0625rem;
             position: relative;
             &::before{
                 position: absolute;
                 content: '';
-                left: -20px;
-                top: 5px;
+                left: -1.25rem;
+                top: 0.3125rem;
                 width: 0;
                 height: 0;
-                border: 5px solid transparent;
-                border-top: 5px solid $YELLOW;
+                border: 0.3125rem solid transparent;
+                border-top: 0.3125rem solid $YELLOW;
             }
         }
 
@@ -58,17 +57,17 @@
         }
 
         .team-member__image{
-            margin-right: 20px;
+            margin-right: 1.25rem;
 
             img{
                 border-radius: 50%;
             }
         }
         .team-member__info{
-            max-width: 270px;
+            max-width: 16.875rem;
             h5{
                 font-weight: bold;
-                margin-bottom: 18px;
+                margin-bottom: 1.125rem;
             }
             font-weight: 300;
         }

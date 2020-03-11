@@ -14,22 +14,22 @@
         position: relative;
 
         .dark-burger__proffer-kkal{
-            width: 60px;
-            height: 60px;
+            width: 3.75rem;
+            height: 3.75rem;
             text-align: center;
              
             .dark-burger__kkal-svg{
-                height: 60px;
+                height: 3.75rem;
             }  
 
             span{
                 font-family: "gagalin";
                 opacity: .5;
-                font-size: 14px;
+                font-size: 0.875rem;
                 display: block;
                 &:nth-child(2){
-                    font-size: 20px;
-                    margin: -38px 0 10px 2px;
+                    font-size: 1.25rem;
+                    margin: -2.375rem 0 0.625rem 0.125rem;
                 }
             }
         }
@@ -37,23 +37,23 @@
         .dark-burger__proffer-composition{
             position: absolute;
             left: 0;
-            top: -80px;
-            width: 90px;
-            height: 90px;
+            top: -5rem;
+            width: 5.625rem;
+            height: 5.625rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
             background: #F08C33;
-            border-radius: 4px;
+            border-radius: 0.25rem;
 
             .dark-burger__burger-svg{
-                height: 44px;
+                height: 2.75rem;
             }
             div{
                 font-family: "gagalin";
-                font-size: 14px;
-                margin-top: 9px;
+                font-size: 0.875rem;
+                margin-top: 0.5625rem;
             }      
         }
 
@@ -61,11 +61,11 @@
 
     .dark-burger__proffer-info {
         .section-header {
-            margin-bottom: 56px;
+            margin-bottom: 3.5rem;
         }
 
         p {
-            margin-bottom: 36px;
+            margin-bottom: 2.25rem;
         }
 
 
@@ -74,15 +74,15 @@
             align-items: center;
 
             .price {
-                line-height: 52px;
+                line-height: 3.25rem;
                 color: $TOMATO;
                 font-family: "gagalin";
-                font-size: 72px;
-                letter-spacing: -1.79px;
-                margin-right: 30px;
+                font-size: 4.5rem;
+                letter-spacing: -0.1119rem;
+                margin-right: 1.875rem;
 
                 span {
-                    font-size: 30px;
+                    font-size: 1.875rem;
                 }
             }
             .btn{

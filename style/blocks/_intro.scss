@@ -3,7 +3,7 @@
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
-    padding: 12px 0 40px 0;
+    padding: 0.75rem 0 2.5rem 0;
 
     .container{
         justify-content: space-between;
@@ -11,32 +11,32 @@
 
     .main-header {
         position: relative;
-        height: 80px;
+        height: 5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .logo{
-        max-width: 92px;
-        height: 69px;
+        max-width: 5.75rem;
+        height: 4.3125rem;
     }
     .to-order{
-        margin-left: 15px;
+        margin-left: 0.9375rem;
     }
     .navigation {
         margin-left: auto;
-        max-width: 670px;
+        max-width: 41.875rem;
         flex-grow: 1;
 
         .navigation__items {
             list-style-position: inside;
             display: flex;
             color: $WHITE;
-            font-size: 13px;
+            font-size: 0.8125rem;
             text-transform: uppercase;
             width: 100%;
             justify-content: space-between;
-            flex-basis: 670px;
+            flex-basis: 41.875rem;
         }
         .navigation__item{
             &:first-child{
@@ -50,28 +50,24 @@
         margin-top: -10vh;
         .intro-burger__image{
             position: relative;
-            margin: 0 12px 0 37px;
+            margin: 0 0.75rem 0 2.3125rem;
         }
         .intro-burger__svg-drops{
             position: absolute;
-            top: 265px;
-            width: 451px;
-            height: 241px;
+            top: 16.5625rem;
+            width: 28.1875rem;
+            height: 15.0625rem;
         }
 
         .intro-burger__info{
-            max-width: 410px;
-            margin-top: 133px;
-
-            .section-header_yellow{
-                color: $YELLOW;
-            }
+            max-width: 25.625rem;
+            margin-top: 8.3125rem;
             p{
                 font-family: "lifehack";
                 color: $WHITE;
-                font-size: 72px;
-                line-height: 65px;
-                letter-spacing: -5px;
+                font-size: 4.5rem;
+                line-height: 4.0625rem;
+                letter-spacing: -0.3125rem;
             }
         }
     }
@@ -79,8 +75,8 @@
     .arrow-down{
         text-align: center;
         .arrow-down-svg{
-            width: 29px;
-            height: 14px;
+            width: 1.8125rem;
+            height: 0.875rem;
         }
     }
 }
