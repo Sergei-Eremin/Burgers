@@ -1057,7 +1057,13 @@ svg {
 }
 
 .delivery-form .delivery-form__column_info .delivery-form__call-back .delivery-form__chek-call .chek-mark {
+  -webkit-transition: .3S;
+  transition: .3S;
+  background-image: url(../image/delivery/check-mark.png);
   opacity: 0;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .delivery-form .delivery-form__column_info .delivery-form__call-back .delivery-form__input-call:checked + .delivery-form__chek-call .chek-mark {

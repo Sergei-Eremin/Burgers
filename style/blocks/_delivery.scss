@@ -130,7 +130,12 @@
                 background-color: $WHITE;
                 
                 .chek-mark{
+                    transition: .3S;
+                    background-image: url(../image/delivery/check-mark.png);
                     opacity: 0;
+                    height: inherit;
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
             }
             
