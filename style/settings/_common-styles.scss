@@ -22,7 +22,9 @@ html {
     height: 100%;
     font-family: "ubuntu", Arial, sans-serif;
   }
-  
+  main{
+    position: relative;
+  }
   .container {
     max-width: 940px;
     width: 100%;
