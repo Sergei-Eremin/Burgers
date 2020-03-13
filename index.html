@@ -34,12 +34,17 @@
                         <div class="to-order">
                             <a class="btn" href="#">Заказать</a>
                         </div>
+                        <div class="burger-btn">
+                            <a href="#" class="burger-link">
+                                <span class="burger-icon"></span>
+                            </a>
+                        </div>
                     </header>
                     <div class="intro-burger">
-                        <svg class="intro-burger__svg-drops">
-                            <use xlink:href="./image/sprite.svg#drops-svg"></use>
-                        </svg>
                         <div class="intro-burger__image">
+                            <svg class="intro-burger__svg-drops">
+                                <use xlink:href="./image/sprite.svg#drops-svg"></use>
+                            </svg>
                             <img src="./image/intro/burger.png" alt="burger">
                         </div>
                         <div class="intro-burger__info">
@@ -63,9 +68,11 @@
                     </h2>
                     <ul class="the-best__items">
                         <li class="the-best__item">
-                            <svg class="the-best__svg">
-                                <use xlink:href="./image/sprite.svg#natural-svg"></use>
-                            </svg>
+                            <div class="the-best__svg">
+                                <svg>
+                                    <use xlink:href="./image/sprite.svg#natural-svg"></use>
+                                </svg>
+                            </div>
                             <div class="the-best__item-content">
                                 <h4 class="the-best__item-headline">
                                     100% свежее мясо
@@ -77,9 +84,11 @@
                             </div>
                         </li>
                         <li class="the-best__item">
-                            <svg class="the-best__svg">
-                                <use xlink:href="./image/sprite.svg#hand-svg"></use>
-                            </svg>
+                            <div class="the-best__svg">
+                                <svg>
+                                    <use xlink:href="./image/sprite.svg#hand-svg"></use>
+                                </svg>
+                            </div>
                             <div class="the-best__item-content">
                                 <h4 class="the-best__item-headline">
                                     Ручная сборка
@@ -91,9 +100,11 @@
                             </div>
                         </li>
                         <li class="the-best__item">
-                            <svg class="the-best__svg">
-                                <use xlink:href="./image/sprite.svg#meat-svg"></use>
-                            </svg>
+                            <div class="the-best__svg">
+                                <svg>
+                                    <use xlink:href="./image/sprite.svg#meat-svg"></use>
+                                </svg>
+                            </div>
                             <div class="the-best__item-content">
                                 <h4 class="the-best__item-headline">
                                     Натуральные ингредиенты
@@ -147,71 +158,69 @@
                 </div>
             </section>
             <section class="team section" id="team4">
-                <div class="container">
-                    <div class="team-people">
-                        <div class="team-people__wrapper">
-                            <h2 class="section-header section-header_yellow">Команда</h2>
-                            <ul class="team-members">
-                                <li class="team-member">
-                                    <a href="#" class="section-header section-header_btn">
-                                        Дэниэл Редклиф
-                                    </a>
-                                    <div class="team-member__container">
-                                        <div class="team-member__image">
-                                            <img src="./image/team/aphex.svg" alt="photo">
-                                        </div>
-                                        <div class="team-member__info">
-                                            <h5>Оператор</h5>
-                                            <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                                        </div>
+                <div class="team-people">
+                    <div class="team-people__wrapper">
+                        <h2 class="section-header section-header_yellow">Команда</h2>
+                        <ul class="team-members">
+                            <li class="team-member">
+                                <a href="#" class="section-header section-header_btn">
+                                    Дэниэл Редклиф
+                                </a>
+                                <div class="team-member__container">
+                                    <div class="team-member__image">
+                                        <img src="./image/team/aphex.svg" alt="photo">
                                     </div>
-                                </li>
-                                <li class="team-member team-member_active">
-                                    <a href="#" class="section-header section-header_btn">
-                                        Ричард Джеймс
-                                    </a>
-                                    <div class="team-member__container">
-                                        <div class="team-member__image">
-                                            <img src="./image/team/aphex.svg" alt="photo">
-                                        </div>
-                                        <div class="team-member__info">
-                                            <h5>Оператор</h5>
-                                            <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                                        </div>
+                                    <div class="team-member__info">
+                                        <h5>Оператор</h5>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                                     </div>
-                                </li>
-                                <li class="team-member">
-                                    <h5 class="section-header">
-                                        Джейк Финн
-                                    </h5>
-                                    <div class="team-member__container">
-                                        <div class="team-member__image">
-                                            <img src="./image/team/aphex.svg" alt="photo">
-                                        </div>
-                                        <div class="team-member__info">
-                                            <h5>Оператор</h5>
-                                            <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="team-member team-member_active">
+                                <a href="#" class="section-header section-header_btn">
+                                    Ричард Джеймс
+                                </a>
+                                <div class="team-member__container">
+                                    <div class="team-member__image">
+                                        <img src="./image/team/aphex.svg" alt="photo">
                                     </div>
-                                </li>
-                                <li class="team-member">
-                                    <h5 class="section-header">
-                                        Николай Иванов
-                                    </h5>
-                                    <div class="team-member__container">
-                                        <div class="team-member__image">
-                                            <img src="./image/team/aphex.svg" alt="photo">
-                                        </div>
-                                        <div class="team-member__info">
-                                            <h5>Оператор</h5>
-                                            <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                                        </div>
+                                    <div class="team-member__info">
+                                        <h5>Оператор</h5>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-
+                                </div>
+                            </li>
+                            <li class="team-member">
+                                <h5 class="section-header">
+                                    Джейк Финн
+                                </h5>
+                                <div class="team-member__container">
+                                    <div class="team-member__image">
+                                        <img src="./image/team/aphex.svg" alt="photo">
+                                    </div>
+                                    <div class="team-member__info">
+                                        <h5>Оператор</h5>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team-member">
+                                <h5 class="section-header">
+                                    Николай Иванов
+                                </h5>
+                                <div class="team-member__container">
+                                    <div class="team-member__image">
+                                        <img src="./image/team/aphex.svg" alt="photo">
+                                    </div>
+                                    <div class="team-member__info">
+                                        <h5>Оператор</h5>
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
             </section>
             <section class="menu section" id="menu5">
@@ -239,7 +248,8 @@
                                 fuga repellendus aliquid molestias nam.
                             </div>
                         </li>
-                        <li class="menu-accordion__item menu-accordion__item_active menu-accordion__item_vegan">
+                        <!-- menu-accordion__item_active -->
+                        <li class="menu-accordion__item menu-accordion__item_vegan">
                             <a class="menu-accordion__item-link" href="#">
                                 <span class="section-header section-header_white">Вегетарианское</span>
                             </a>
@@ -432,8 +442,8 @@
             </section>
             <section class="delivery section" id="delivery8">
                 <div class="container">
+                    <h2 class="section-header section-header_yellow">Закажите доставку</h2>
                     <form class="delivery-form">
-                        <h2 class="section-header section-header_yellow">Закажите доставку</h2>
                         <div class="delivery-form__column delivery-form__column_buyer">
                             <label  class="delivery-form__name">
                                 <span class="delivery-form__label-name">Имя</span>
@@ -513,7 +523,7 @@
                             <svg class="phone-svg">
                                 <use xlink:href="./image/sprite.svg#phone-svg"></use>
                             </svg>
-                            +7 (812) 377-13-77
+                            <a href="tel:+78123771377">+7 (812) 377-13-77</a>
                         </div>
                     </div>
                     <div class="social">

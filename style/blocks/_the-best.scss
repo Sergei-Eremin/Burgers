@@ -17,20 +17,30 @@
     }
 
     .the-best__item{
+        color: $GRAY;
         display: flex;
         flex-direction: column;
+        align-items: center;
         max-width: 17.5625rem;
+        margin: 0 20px;
 
         .the-best__svg{
-            height: 5.5625rem;
+            max-width: 90px;
+            width: 100%;
+            text-align: center;
+            svg{
+                height: 90px;
+            }
         }
-        h4{
+        .the-best__item-headline{
             text-align: center;
             margin: 1.875rem 0 1.5625rem;
             font-family: 'lifehack';
             font-size: 1.5rem;
+            font-weight: 5;
         }
         p{
+            opacity: .8;
             text-align: center;
         }
     }

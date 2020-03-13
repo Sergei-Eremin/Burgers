@@ -31,15 +31,18 @@
         }
         .reviews__item-wrap{
             max-width: 14.0625rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 60%;
         }
         .section-header_mini-white{
             color: $WHITE;
             font-size: 0.875rem;
             line-height: 0.875rem;
-            margin-bottom: 1.875rem;
         }
         .reviews__item-text{
-            margin-bottom: 1.125rem;
             color: $WHITE;
             font-size: 0.875rem;
             line-height: 1.5rem;

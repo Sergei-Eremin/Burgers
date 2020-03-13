@@ -3,10 +3,12 @@
     background-image: url(../image/menu/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     
-    >.section-header{
-        margin-left: 6.25rem;
-        margin-top: 6.875rem;
+    >.section-header_white{
+        position: absolute;
+        top: 100px;
+        left: 100px;
     }
 
     .menu-accordion{
@@ -27,13 +29,14 @@
                 width: 0;
                 overflow: hidden;
             }
+            // //////////////////////////////////
             &.menu-accordion__item_active {
                 .menu-accordion__item-text{
                     padding: 20px 10px 0;
                     width: 540px;
                 }
             }
-
+            // //////////////////////////////////
             &.menu-accordion__item_meat .menu-accordion__item-link{
                 background-image: url(../image/menu/meat-background.png);
             }

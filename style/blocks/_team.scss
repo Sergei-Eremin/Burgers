@@ -3,11 +3,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    .container{
-        max-width: none;
-        align-items: flex-end;
-    }
+    display: flex;
+
     .team-people{
+        margin-left: auto;
         width: 50%;
         padding: 0 0 0 6.25rem;
         background-color: $GRAY;

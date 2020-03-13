@@ -4,14 +4,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.section-header_yellow{
+    margin: 0 auto 2.75rem;
+}
 .delivery-form{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .section-header_yellow{
-        margin: 0 auto 2.75rem;
-    }
 
     .delivery-form__column{
         display: flex;
@@ -130,7 +130,7 @@
                 background-color: $WHITE;
                 
                 .chek-mark{
-                    transition: .3S;
+                    transition: .2S;
                     background-image: url(../image/delivery/check-mark.png);
                     opacity: 0;
                     height: inherit;

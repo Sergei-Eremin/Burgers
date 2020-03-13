@@ -1,11 +1,12 @@
 .footer{
     position: absolute;
     bottom: 0;
-    height: 3.75rem;
+    min-height: 3.75rem;
     width: 100%;
     background-image: url(../image/footer/background.png);
 
     .footer-container{
+        padding: 10px 20px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -13,6 +14,7 @@
         .social{
             width: 50%;
             color: $WHITE;
+            font-style: normal;
 
             svg{
                 width: 1.25rem;
@@ -29,12 +31,16 @@
                 height: 0.6875rem;
                 opacity: 1;
             }
+            .copyright-phone{
+                color: #e45028;
+                font-weight: bold;;
+            }
         }
         .social{
             display: flex;
             justify-content: flex-end;
-            svg{
-                margin: 0 10px;
+            a{
+                margin: 0 0 0 20px;
             }
         }
     }

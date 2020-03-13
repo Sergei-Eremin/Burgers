@@ -23,6 +23,43 @@
     .to-order{
         margin-left: 0.9375rem;
     }
+    .burger-btn{
+        margin-left: 30px;
+        display: none;
+        
+        .burger-icon{
+            display: block;
+            width: 24px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: $WHITE;
+            position: relative;
+
+            &::before{
+                display: block;
+                width: 24px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: $WHITE;
+                position: absolute;
+                content: '';
+                left: 0;
+                top: -9px;
+            }
+
+            &::after{
+                display: block;
+                width: 24px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: $WHITE;
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 9px;
+            }
+        }
+    }
     .navigation {
         margin-left: auto;
         max-width: 41.875rem;
@@ -47,6 +84,7 @@
     
     .intro-burger{
         display: flex;
+        flex-wrap: wrap;
         margin-top: -10vh;
         .intro-burger__image{
             position: relative;
@@ -54,7 +92,8 @@
         }
         .intro-burger__svg-drops{
             position: absolute;
-            top: 16.5625rem;
+            top: 4.5625rem;
+            left: -0.75rem;
             width: 28.1875rem;
             height: 15.0625rem;
         }
