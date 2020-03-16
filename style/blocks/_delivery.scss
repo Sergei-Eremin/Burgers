@@ -41,7 +41,7 @@
         justify-content: space-between;
 
         label{
-            flex: 0 0 6.25rem;
+            flex: 0 0 100px;
         }
         input{
             line-height: 1.5625rem;
@@ -49,7 +49,7 @@
         }
         .delivery-form__name,
         .delivery-form__phone{
-            flex: 0 0 13.75rem;
+            flex: 0 0 47%;
         }
         .delivery-form__street{
             flex: 0 0 100%;

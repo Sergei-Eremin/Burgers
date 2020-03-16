@@ -28,13 +28,26 @@
             .menu-accordion__item-text{
                 width: 0;
                 overflow: hidden;
+                background-color: rgba(20, 20, 20, 0.7);
             }
             // //////////////////////////////////
             &.menu-accordion__item_active {
-                .menu-accordion__item-text{
-                    padding: 20px 10px 0;
-                    width: 540px;
+
+                .section-header {
+                    color: $YELLOW;
                 }
+
+                .menu-accordion__item-text{
+
+                    .menu-accordion__item-text-container{
+                        padding: 3.875rem 2.3125rem 3.875rem 2.0625rem;
+                    }
+                    
+                    max-width: 540px;
+                    width: 100%;
+
+                }
+
             }
             // //////////////////////////////////
             &.menu-accordion__item_meat .menu-accordion__item-link{
@@ -56,6 +69,7 @@
                 position: relative;
                 background-size: cover;
                 background-repeat: no-repeat;
+                padding-bottom: 2.5rem;
 
                 &::before{
                     height: inherit;
@@ -70,12 +84,10 @@
             }
 
             .section-header_white{
-                transform: rotate(-90deg);
+                transform: rotate(180deg);
                 font-size: 2.5rem;
-                line-height: 2.5rem;
                 margin-top: auto;
-                padding-left: 3.75rem;
-                white-space: nowrap;
+                writing-mode: vertical-rl;
             }
         }
     }

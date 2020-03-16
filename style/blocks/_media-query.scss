@@ -1,12 +1,14 @@
 @media (max-width: 768px){
+    // common-styles
+    .container{
+        width: 95%;
+    }
+    // common-styles end
     .section-navigation{
         display: none;
     }
 
     .intro{
-        .main-header{
-            padding: 0 25px;
-        }
         .navigation{
             display: none;
         }
@@ -18,16 +20,11 @@
         }
 
         .intro-burger{
-            margin: -3vh 0 0 0;
-            display: inline-block;
-
 
             .intro-burger__image{
-                margin: 0;
                 text-align: center;
-            }
-            .intro-burger__svg-drops{
-                left: 8.65rem;
+                margin: 0 auto;
+                padding: 0 5%;
             }
             .intro-burger__info{
                 text-align: center;
@@ -40,7 +37,7 @@
         .team-people{
             width: 100%;
             margin: 0;
-            padding: 0;
+            padding: 0 5%;
         }
         .team-people__wrapper{
             text-align: center;
@@ -99,21 +96,19 @@
 @media (max-width: 480px){
     .intro{
         .intro-burger{
-            .intro-burger__image img{
-                max-width: 20.8125rem;
-            }
+
             .intro-burger__svg-drops{
-                max-width: 22.5625rem;
-                left: 2.95rem;
-                top: 2.0625rem;
+                top: 6%;
+                left: 0;
+                width: 90%;
             }
             .intro-burger__info{
                 .section-header_yellow{
-                    font-size: 3.375rem;
+                    font-size: 3.175rem;
                     margin: 0 auto 0;
                 }
                 & p{
-                    font-size: 3.575rem;
+                    font-size: 3.075rem;
                 }
             }
         }
@@ -123,6 +118,7 @@
             margin-bottom: 1.875rem;
             font-size: 50px;
         }
+
         .the-best__items{
             flex-direction: column;
             align-items: center;
@@ -131,16 +127,20 @@
             flex-direction: row;
             align-items: flex-start;
             max-width: none;
-            margin-bottom: 50px;
+            margin-bottom: 1.5625rem;
+
             .the-best__svg{
-                margin-right: 25px;
+                max-width: 65px;
+                margin-right: 20px;
             }
+
             .the-best__item-headline{
                 margin: 0 0 1.25rem;
                 text-align: left;
             }
             & p{
                 text-align: left;
+                font-size: 14px;
             }
         }
     }
@@ -150,7 +150,7 @@
     .menu{
         .section-header_white{
             top: 3.75rem;
-            left: 3.75rem;
+            left: 0.55rem;
             font-size: 3.125rem;
         }
     }
@@ -159,25 +159,40 @@
             padding: 0.75rem;
         }
         .reviews__item-text{
-            height: 60%;
+            height: 55%;
             overflow: hidden;
             text-overflow: ellipsis;
         }
     }
     .delivery{
         .section-header_yellow{
-            font-size: 50px;
-            max-width: 50%;
+            font-size: 32px;
+            margin: 0 auto 20px;
         }
         .delivery-form{
             .delivery-form__column_info{
                 align-items: center;
             }
         }
+        .delivery-form__column_buyer{
+            
+            label:last-child{
+                display: none;
+            }
+            .delivery-form__house,
+            .delivery-form__corps,
+            .delivery-form__apartment{
+                flex: 0 1 30%;
+                &:first-child{
+                    margin-left: 10px;
+                }
+            }
+        }
     }
     .footer{
         .footer-container{
             flex-wrap: wrap;
+            padding: 10px 20px;
             .copyright,
             .social{
                 width: 100%;

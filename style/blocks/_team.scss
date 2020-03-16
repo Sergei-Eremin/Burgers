@@ -34,6 +34,7 @@
             color: $WHITE;
             margin-bottom: 1.0625rem;
             position: relative;
+
             &::before{
                 position: absolute;
                 content: '';
@@ -76,7 +77,13 @@
             }
             .section-header{
                 color: $YELLOW;
+
+                &::before{
+                    transition: 0.3s;
+                    transform: rotate(-180deg) translate(0px, 5px);
+                }
             }
+
         }
     }
 

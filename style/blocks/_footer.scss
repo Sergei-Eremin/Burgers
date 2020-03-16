@@ -5,13 +5,16 @@
     width: 100%;
     background-image: url(../image/footer/background.png);
 
+    display: flex;
+    align-items: center;
+
     .footer-container{
-        padding: 10px 20px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         .copyright,
         .social{
+            line-height: 1.4375rem;
             width: 50%;
             color: $WHITE;
             font-style: normal;
