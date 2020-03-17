@@ -1375,9 +1375,9 @@ svg {
     font-size: 3.125rem;
   }
   .reviews .reviews__item-review .reviews__item-wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .reviews .reviews__item-review {
     padding: 0.75rem;
