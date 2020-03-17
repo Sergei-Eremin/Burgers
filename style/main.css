@@ -1228,8 +1228,8 @@ svg {
   opacity: 1;
 }
 
-.footer .footer-container .copyright .copyright-phone,
-.footer .footer-container .social .copyright-phone {
+.footer .footer-container .copyright .copyright__phone,
+.footer .footer-container .social .copyright__phone {
   color: #e45028;
   font-weight: bold;
 }
@@ -1374,13 +1374,16 @@ svg {
     left: 0.55rem;
     font-size: 3.125rem;
   }
+  .reviews .reviews__item-review .reviews__item-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .reviews .reviews__item-review {
     padding: 0.75rem;
   }
   .reviews .reviews__item-text {
-    height: 55%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
   .delivery .section-header_yellow {
     font-size: 32px;

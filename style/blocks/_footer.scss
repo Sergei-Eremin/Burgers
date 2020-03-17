@@ -12,6 +12,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        
         .copyright,
         .social{
             line-height: 1.4375rem;
@@ -34,7 +35,7 @@
                 height: 0.6875rem;
                 opacity: 1;
             }
-            .copyright-phone{
+            .copyright__phone{
                 color: #e45028;
                 font-weight: bold;;
             }
