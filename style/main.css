@@ -958,6 +958,10 @@ svg {
   background-color: #2f3234;
 }
 
+.reviews .reviews__item-review .reviews__item-btn span:last-child {
+  display: none;
+}
+
 .work {
   background-image: url(../image/work/background.png);
   background-position: center;
@@ -1378,6 +1382,12 @@ svg {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .reviews .reviews__item-review .reviews__item-btn span:first-child {
+    display: none;
+  }
+  .reviews .reviews__item-review .reviews__item-btn span:last-child {
+    display: inline;
   }
   .reviews .reviews__item-review {
     padding: 0.75rem;

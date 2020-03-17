@@ -49,6 +49,9 @@
         }
         .reviews__item-btn{
             background-color: $GRAY;
+            & span:last-child{
+                display: none;
+            }
         }
     }
 }

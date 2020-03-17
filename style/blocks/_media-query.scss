@@ -159,7 +159,14 @@
             .reviews__item-wrap{
                 justify-content: space-evenly;
             }
-
+            .reviews__item-btn{
+                & span:first-child{
+                    display: none;
+                }
+                & span:last-child{
+                    display: inline;
+                }
+            }
         }
 
         .reviews__item-review{
