@@ -1,80 +1,142 @@
-@media (max-width: 768px){
+@media (max-width: 768px) {
+
     // common-styles
-    .container{
+    .container {
         width: 95%;
     }
+
     // common-styles end
-    .section-navigation{
+    .section-navigation {
         display: none;
     }
 
-    .intro{
-        .navigation{
-            display: none;
+    .intro {
+        .main-header{
+            &.main-header_active{
+                position: fixed;
+                width: 95%;
+
+                .intro-burger{
+                    margin-top: 8vh;
+                }
+            }
         }
-        .to-order{
+
+        .navigation {
+            display: none;
+            max-width: none;
+
+            &.navigation_active {
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: #2f3234;
+                opacity: 0.99;
+
+                .navigation__items{
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    justify-content: center;
+                    list-style-type: none;
+                    font-size: 24px;
+                    .navigation__item{
+                        margin-bottom: 15px;
+                        &:first-child::before{
+                            display: none;
+                        }
+                    }
+                    .navigation__item::before{
+                        content: '';
+                        width: 7px;
+                        height: 7px;
+                        background-color: $WHITE;
+                        border-radius: 50%;
+                        display: block;
+                        margin: 0 auto 10px;
+                    }
+                }
+            }
+        }
+
+        .to-order {
             margin-left: auto;
         }
-        .burger-btn{
+
+        .burger-btn {
             display: block;
         }
 
-        .intro-burger{
 
-            .intro-burger__image{
+        .intro-burger {
+
+            .intro-burger__image {
                 text-align: center;
                 margin: 0 auto;
                 padding: 0 5%;
             }
-            .intro-burger__info{
+
+            .intro-burger__info {
                 text-align: center;
                 margin: 0 auto;
             }
         }
     }
 
-    .team{
-        .team-people{
+
+    .team {
+        .team-people {
             width: 100%;
             margin: 0;
             padding: 0 5%;
         }
-        .team-people__wrapper{
+
+        .team-people__wrapper {
             text-align: center;
         }
-        .team-members{
-            .section-header{
+
+        .team-members {
+            .section-header {
                 font-size: 24px;
             }
 
-            .team-member{
+            .team-member {
                 padding: 0;
             }
-            .team-member__container{
+
+            .team-member__container {
                 flex-direction: column;
             }
-            .team-member__image{
+
+            .team-member__image {
                 margin: 0 0 20px;
             }
-            .team-member__info{
+
+            .team-member__info {
                 max-width: 21.25rem;
             }
         }
-        
+
     }
 
     // .menu{
-        
+
     // }
 
-    .reviews{
-        .reviews__item{
+    .reviews {
+        .reviews__item {
             width: 50%;
             height: 25%;
         }
-        .reviews__item-review{
+
+        .reviews__item-review {
             padding: 0.75rem;
-            .reviews__item-wrap{
+
+            .reviews__item-wrap {
                 max-width: 17.5rem;
                 text-align: center;
                 align-items: center;
@@ -82,9 +144,9 @@
             }
         }
     }
-    
-    .delivery{
-        .delivery-form{
+
+    .delivery {
+        .delivery-form {
             justify-content: center;
         }
     }
@@ -93,132 +155,154 @@
 
     // }
 }
-@media (max-width: 480px){
-    .intro{
-        .intro-burger{
 
-            .intro-burger__svg-drops{
+
+
+@media (max-width: 480px) {
+    .intro {
+        .intro-burger {
+
+            .intro-burger__svg-drops {
                 top: 6%;
                 left: 0;
                 width: 90%;
             }
-            .intro-burger__info{
-                .section-header_yellow{
+
+            .intro-burger__info {
+                .section-header_yellow {
                     font-size: 3.175rem;
                     margin: 0 auto 0;
                 }
-                & p{
+
+                & p {
                     font-size: 3.075rem;
                 }
             }
         }
     }
-    .the-best{
-        .section-header{
+
+    .the-best {
+        .section-header {
             margin-bottom: 1.875rem;
             font-size: 50px;
         }
 
-        .the-best__items{
+        .the-best__items {
             flex-direction: column;
             align-items: center;
         }
-        .the-best__item{
+
+        .the-best__item {
             flex-direction: row;
             align-items: flex-start;
             max-width: none;
             margin-bottom: 1.5625rem;
 
-            .the-best__svg{
+            .the-best__svg {
                 max-width: 65px;
                 margin-right: 20px;
             }
 
-            .the-best__item-headline{
+            .the-best__item-headline {
                 margin: 0 0 1.25rem;
                 text-align: left;
             }
-            & p{
+
+            & p {
                 text-align: left;
                 font-size: 14px;
             }
         }
     }
+
     // .team{
 
     // }
-    .menu{
-        .section-header_white{
+    .menu {
+        .section-header_white {
             top: 3.75rem;
             left: 0.55rem;
             font-size: 3.125rem;
         }
     }
-    .reviews{
-        .reviews__item-review{
-            .reviews__item-wrap{
+
+    .reviews {
+        .reviews__item-review {
+            .reviews__item-wrap {
                 justify-content: space-evenly;
             }
-            .reviews__item-btn{
-                & span:first-child{
+
+            .reviews__item-btn {
+                & span:first-child {
                     display: none;
                 }
-                & span:last-child{
+
+                & span:last-child {
                     display: inline;
                 }
             }
         }
 
-        .reviews__item-review{
+        .reviews__item-review {
             padding: 0.75rem;
         }
 
-        .reviews__item-text{
+        .reviews__item-text {
             display: none;
         }
     }
-    .delivery{
-        .section-header_yellow{
+
+    .delivery {
+        .section-header_yellow {
             font-size: 32px;
             margin: 0 auto 20px;
         }
-        .delivery-form{
-            .delivery-form__column_info{
+
+        .delivery-form {
+            .delivery-form__column_info {
                 align-items: center;
             }
         }
-        .delivery-form__column_buyer{
-            
-            label:last-child{
+
+        .delivery-form__column_buyer {
+
+            label:last-child {
                 display: none;
             }
+
             .delivery-form__house,
             .delivery-form__corps,
-            .delivery-form__apartment{
+            .delivery-form__apartment {
                 flex: 0 1 30%;
-                &:first-child{
+
+                &:first-child {
                     margin-left: 10px;
                 }
             }
         }
     }
-    .footer{
-        .footer-container{
+
+    .footer {
+        .footer-container {
             flex-wrap: wrap;
             padding: 10px 20px;
+
             .copyright,
-            .social{
+            .social {
                 width: 100%;
                 text-align: center;
             }
-            .copyright{
+
+            .copyright {
                 margin-bottom: 20px;
-                address{
+
+                address {
                     font-weight: 300;
                     font-style: normal;
                 }
             }
-            .social{
+
+            .social {
                 justify-content: center;
             }
         }

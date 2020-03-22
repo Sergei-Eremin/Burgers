@@ -11,6 +11,7 @@
 
     .main-header {
         position: relative;
+        z-index: 5;
         height: 5rem;
         display: flex;
         justify-content: space-between;
@@ -19,14 +20,24 @@
     .logo{
         max-width: 5.75rem;
         height: 4.3125rem;
+        z-index: 5;
     }
     .to-order{
         margin-left: 0.9375rem;
+        z-index: 5;
+        &.to-order_opacity-0{
+            opacity: 0;
+        }
     }
     .burger-btn{
         margin-left: 30px;
         display: none;
         
+        .burger-link{
+            display: block;
+            padding: 30px 0px;
+        }
+
         .burger-icon{
             display: block;
             width: 24px;
@@ -45,6 +56,7 @@
                 content: '';
                 left: 0;
                 top: -9px;
+                transition: all .2s ease-in;
             }
 
             &::after{
@@ -57,8 +69,23 @@
                 content: '';
                 left: 0;
                 top: 9px;
+                transition: all .2s ease-in;
+            }
+            &.burger-icon_active{
+                background-color: transparent;
+            }
+            &.burger-icon_active::before{
+                transform: rotate(45deg);
+                top: 0;
+                transition: all .2s ease-in;
+            }
+            &.burger-icon_active::after{
+                transform: rotate(-45deg);
+                top: 0;
+                transition: all .2s ease-in;
             }
         }
+
     }
     .navigation {
         margin-left: auto;
