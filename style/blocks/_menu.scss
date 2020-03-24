@@ -9,6 +9,7 @@
         position: absolute;
         top: 100px;
         left: 100px;
+        z-index: 0;
     }
 
     .menu-accordion{
@@ -18,12 +19,12 @@
             list-style-type: none;
             display: flex;
             height: 100%;
-
         }
 
         .menu-accordion__item{
             display: flex;
             color: $WHITE;
+            z-index: 2;
 
             .menu-accordion__item-text{
                 width: 0;

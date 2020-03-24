@@ -821,6 +821,7 @@ svg {
   position: absolute;
   top: 100px;
   left: 100px;
+  z-index: 0;
 }
 
 .menu .menu-accordion {
@@ -840,6 +841,7 @@ svg {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  z-index: 2;
 }
 
 .menu .menu-accordion .menu-accordion__item .menu-accordion__item-text {
