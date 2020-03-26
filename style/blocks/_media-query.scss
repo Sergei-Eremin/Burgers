@@ -109,7 +109,9 @@
             }
 
             .team-member__container {
-                flex-direction: column;
+                .team-member__container-wrapper{
+                    flex-direction: column;
+                }
             }
 
             .team-member__image {

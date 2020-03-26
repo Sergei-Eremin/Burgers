@@ -24,7 +24,7 @@
         .team-member{
             margin-bottom: 2.5rem;
             padding-left: 1.25rem;
-            
+            cursor: pointer;
         }
 
         .section-header{
@@ -49,11 +49,13 @@
 
         .team-member__container{
             overflow: hidden;
-            height: 0;
-            display: flex;
-            align-items: center;
+            max-height: 0;
             color: $WHITE;
-
+            transition: .3s ease-in;
+            .team-member__container-wrapper{
+                display: flex;
+                align-items: center;
+            }
         }
 
         .team-member__image{
@@ -73,7 +75,7 @@
         }
         .team-member_active {
             .team-member__container{
-                height: auto;
+                max-height: none;
             }
             .section-header{
                 color: $YELLOW;

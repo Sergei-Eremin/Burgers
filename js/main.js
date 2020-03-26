@@ -5,11 +5,11 @@ let burgerIcon = document.querySelector('.burger-icon');
 let navigationMenu = document.querySelector('.navigation');
 let sectionIntro = document.querySelector('.intro');
 let mainHeader = document.querySelector('.main-header');
-let navigationItem = document.getElementsByClassName('navigation__item');
+// 
+let navigationItems = document.querySelector('.navigation__items');
 
-let sectionMenu = document.querySelector('.menu');
-let menuAccordion__item = document.querySelectorAll('.menu-accordion__item');
 
+// header
 burgerBtn.addEventListener("click", function(event){
     event.preventDefault();
 
@@ -19,27 +19,74 @@ burgerBtn.addEventListener("click", function(event){
     sectionIntro.classList.toggle('intro_active')
 });
 
-// navigationItem.addEventListener("click", function(event) {
-    
-//     if (navigationItem) {
-//         navigationMenu.classList.remove('navigation_active');
-//         burgerIcon.classList.remove('burger-icon_active');
-//     }
-
-// });
-
-sectionMenu.addEventListener("click", function(event){
-    console.log(event.target.tagName.toLowerCase());
-    event.preventDefault();
+navigationItems.addEventListener("click", function(event) {
     let eventName = event.target.tagName.toLowerCase()
+    
+    if ((eventName === "a" && window.innerWidth <= 768) || (eventName === "li" && window.innerWidth <= 768)) {
+        navigationMenu.classList.remove('navigation_active');
+        burgerIcon.classList.remove('burger-icon_active');
+        console.log("событие работает");
+    }
 
-    if (eventName === "a" || eventName === "span") {
+});
+// header end
+
+// 
+let sectionMenu = document.querySelector('.menu');
+sectionMenu.addEventListener("click", function(event){
+    event.preventDefault();
+    let menuAccordion__item = document.querySelectorAll('.menu-accordion__item');
+    let eventClick = event.target.tagName.toLowerCase()
+
+    if (eventClick === "a" || eventClick === "span") {
         for (let y = 0; y < menuAccordion__item.length; y++) {
             menuAccordion__item[y].classList.remove("menu-accordion__item_active")
         };
-        let target = event.target.closest(".menu-accordion__item")
-        console.log(target);
-        target.classList.add("menu-accordion__item_active")
+        let clickTarget = event.target.closest(".menu-accordion__item")
+        // console.log(target);
+        clickTarget.classList.add("menu-accordion__item_active")
     } 
 
 })
+
+// 
+let teamPeople__wrapper = document.querySelector(".team-people__wrapper");
+
+teamPeople__wrapper.addEventListener('click', function(event){
+    event.preventDefault();
+
+    let teamMember = document.getElementsByClassName('team-member');
+
+    let eventClick = event.target.tagName.toLowerCase();
+
+    if (eventClick === 'li' || eventClick === 'a') {
+        
+        for (let i = 0; i < teamMember.length; i++) {
+            teamMember[i].lastElementChild.style.maxHeight = "0px"
+            teamMember[i].classList.remove("team-member_active")
+        }
+
+        let containerHeight = event.target.closest('.team-member').lastElementChild.firstElementChild.clientHeight;
+        
+        event.target.closest('.team-member').lastElementChild.style.maxHeight = containerHeight + 'px';
+        
+        let clickTarget = event.target.closest('.team-member');
+        clickTarget.classList.add('team-member_active');
+
+
+        // БЕЗ АДАПТИВА
+        // for (let i = 0; i < teamMember.length; i++) {
+        //     teamMember[i].classList.remove("team-member_active")
+        //     console.log(teamMember.length);
+        // };
+
+        // let clickTarget = event.target.closest('.team-member');
+        // clickTarget.classList.add('team-member_active')
+
+    }
+})
+
+
+
+// slider
+

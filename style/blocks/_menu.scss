@@ -39,14 +39,13 @@
                 }
 
                 .menu-accordion__item-text{
+                    transition: .3s ease-in;
+                    max-width: 540px;
+                    width: 100%;
 
                     .menu-accordion__item-text-container{
                         padding: 3.875rem 2.3125rem 3.875rem 2.0625rem;
                     }
-                    
-                    max-width: 540px;
-                    width: 100%;
-
                 }
 
             }
