@@ -600,6 +600,49 @@ svg {
   color: #fff;
 }
 
+.dark-burger .slider {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dark-burger .slider .slider__link {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.dark-burger .slider .slider__link.slider__link_right {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.dark-burger .slider .slider__wrap {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.dark-burger .slider .slider__items {
+  list-style-type: none;
+  max-height: 457px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dark-burger .slider .slider__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .dark-burger .dark-burger__proffer {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -182,4 +182,23 @@
             </g>
         </g>
     </symbol>
+    <symbol id='arrow-left-svg' viewBox="0 0 15 29">
+            <defs>
+            <clipPath id="yfy3a">
+                <path d="M13.994 28.004L2.227 17.367a3.97 3.97 0 0 1 0-5.723L13.994 1.008" />
+            </clipPath>
+        </defs>
+        <g>
+            <g>
+                <path stroke-miterlimit="20" stroke-width="4"
+                    d="M13.994 28.004L2.227 17.367a3.97 3.97 0 0 1 0-5.723L13.994 1.008"
+                    clip-path="url(&quot;#yfy3a&quot;)" />
+            </g>
+        </g>
+    </symbol>
+    <symbol id='arrow-right-svg' viewBox="0 0 28.685 14.479">
+        <path
+            d="M14.332 14.479a4.964 4.964 0 0 1-3.525-1.458L.268 1.681A1 1 0 1 1 1.733.32l10.514 11.314c1.145 1.143 3.049 1.142 4.218-.026L26.952.319a1 1 0 0 1 1.465 1.361L17.903 12.995a5.033 5.033 0 0 1-3.571 1.484z">
+        </path>
+    </symbol>
 </svg>
