@@ -154,17 +154,24 @@ let deliverySubmitBtn = document.querySelector('.delivery-form__btn_submit');
 
 deliveryForm.addEventListener('submit', function(event){
     event.preventDefault();
-
+    
+    const xhr = new XMLHttpRequest();
     if(validateForm(deliveryForm)){
-        const xhr = new XMLHttpRequest();
-        let formData = new FormData(deliveryForm);
+        let formData = new FormData();
+        formData.append("name", `${deliveryForm.clientName.value}`);
+        formData.append("phone", `${deliveryForm.clientPhone.value}`);
+        formData.append("comment", `${deliveryForm.clientComment.value}`);
+        formData.append("to", `gaga@mail.ru`);
         xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send();
-        console.log(formData);
-        
-        
+        xhr.send(formData);
     }
+
+    xhr.addEventListener('load', function(){
+        if(this.readyState == 4 && this.status >= 200){
+            console.log(`status code ${xhr.status}`);
+        }
+    })
 });
 
 function validateForm(form) {
