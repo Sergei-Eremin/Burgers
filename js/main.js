@@ -146,16 +146,55 @@ const SLIDER_1 = new Slider("#dark-burger-slider",{
 
 console.log(SLIDER_1);
 
+
+// overlay
+
+const template = document.querySelector("#overlayTemplate").innerHTML;
+const overlay = createOverlay(template);
+
+function createOverlay(template) {
+  const fragment = document.createElement('div');
+
+  fragment.innerHTML = template;
+
+  const overlayElement = fragment.querySelector(".overlay");
+  const contentElement = fragment.querySelector(".overlay__content");
+  const closeElement = fragment.querySelector(".overlay__close");
+  
+  overlayElement.addEventListener("click", e => {
+    if (e.target === overlayElement) {
+      closeElement.click();
+    }
+  });
+  closeElement.addEventListener("click", () => {
+    document.body.removeChild(overlayElement);
+  });
+
+  return {
+    open() {
+      document.body.appendChild(overlayElement);
+    },
+    close() {
+      closeElement.click();
+    },
+    setContent(content) {
+      contentElement.innerHTML = content;
+    }
+  };
+}
+
+
+
 // delivery
 
 let deliveryForm = document.querySelector('.delivery-form');
 let deliverySubmitBtn = document.querySelector('.delivery-form__btn_submit');
 
 
+const xhr = new XMLHttpRequest();
 deliveryForm.addEventListener('submit', function(event){
     event.preventDefault();
     
-    const xhr = new XMLHttpRequest();
     if(validateForm(deliveryForm)){
         let formData = new FormData();
         formData.append("name", `${deliveryForm.clientName.value}`);
@@ -170,6 +209,8 @@ deliveryForm.addEventListener('submit', function(event){
     xhr.addEventListener('load', function(){
         if(this.readyState == 4 && this.status >= 200){
             console.log(`status code ${xhr.status}`);
+            overlay.open();
+            overlay.setContent('Ваш заказ принят!');
         }
     })
 });
@@ -199,3 +240,4 @@ function validateField(field){
         return true;
     }
 };
+
