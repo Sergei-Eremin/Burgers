@@ -1,0 +1,44 @@
+.section-navigation{
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    z-index: 999;
+
+    .section-navigation_items{
+        list-style-type: none;
+    }
+
+    .section-navigation_item{
+        a{
+            margin-bottom: 15px;
+            height: 6px;
+            width: 6px;
+            background: $WHITE;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            
+            &::after{
+                content: '';
+                border: 1px solid $WHITE;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: -5px;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        &.active{
+            a::after{
+                opacity: 1;
+            }
+        }
+        
+    }
+}

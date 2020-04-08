@@ -1,0 +1,92 @@
+.team{
+    background-image: url(../image/team/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+    .team-people{
+        margin-left: auto;
+        width: 50%;
+        padding: 0 0 0 6.25rem;
+        background-color: $GRAY;
+        opacity: .9;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-header{
+        margin-bottom: 2.875rem;
+    }
+    .team-members{
+        list-style-type: none;
+        .team-member{
+            margin-bottom: 2.5rem;
+            padding-left: 1.25rem;
+            cursor: pointer;
+        }
+
+        .section-header{
+            display: inline-block;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            color: $WHITE;
+            margin-bottom: 1.0625rem;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                left: -1.25rem;
+                top: 0.3125rem;
+                width: 0;
+                height: 0;
+                border: 0.3125rem solid transparent;
+                border-top: 0.3125rem solid $YELLOW;
+            }
+        }
+
+        .team-member__container{
+            overflow: hidden;
+            max-height: 0;
+            color: $WHITE;
+            transition: .3s ease-in;
+            .team-member__container-wrapper{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .team-member__image{
+            margin-right: 1.25rem;
+
+            img{
+                border-radius: 50%;
+            }
+        }
+        .team-member__info{
+            max-width: 16.875rem;
+            h5{
+                font-weight: bold;
+                margin-bottom: 1.125rem;
+            }
+            font-weight: 300;
+        }
+        .team-member_active {
+            .team-member__container{
+                max-height: none;
+            }
+            .section-header{
+                color: $YELLOW;
+
+                &::before{
+                    transition: 0.3s;
+                    transform: rotate(-180deg) translate(0px, 5px);
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,94 @@
+.menu{
+    display: flex;
+    background-image: url(../image/menu/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    >.section-header_white{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 0;
+    }
+
+    .menu-accordion{
+        margin-left: auto;
+
+        .menu-accordion__items{
+            list-style-type: none;
+            display: flex;
+            height: 100%;
+        }
+
+        .menu-accordion__item{
+            display: flex;
+            color: $WHITE;
+            z-index: 2;
+
+            .menu-accordion__item-text{
+                width: 0;
+                overflow: hidden;
+                background-color: rgba(20, 20, 20, 0.7);
+            }
+            // //////////////////////////////////
+            &.menu-accordion__item_active {
+
+                .section-header {
+                    color: $YELLOW;
+                }
+
+                .menu-accordion__item-text{
+                    transition: .3s ease-in;
+                    max-width: 540px;
+                    width: 100%;
+
+                    .menu-accordion__item-text-container{
+                        padding: 3.875rem 2.3125rem 3.875rem 2.0625rem;
+                    }
+                }
+
+            }
+            // //////////////////////////////////
+            &.menu-accordion__item_meat .menu-accordion__item-link{
+                background-image: url(../image/menu/meat-background.png);
+            }
+            &.menu-accordion__item_vegan .menu-accordion__item-link{
+                background-image: url(../image/menu/vegan-background.png);
+            }
+            &.menu-accordion__item_diet .menu-accordion__item-link{
+                background-image: url(../image/menu/diet-background.png);
+            }
+
+
+            .menu-accordion__item-link{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 80px;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-bottom: 2.5rem;
+
+                &::before{
+                    height: inherit;
+                    content: '';
+                    background-color: rgba(20, 20, 20, 0.7);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .section-header_white{
+                transform: rotate(180deg);
+                font-size: 2.5rem;
+                margin-top: auto;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+}

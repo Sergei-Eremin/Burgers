@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" viewBox="0 0 15 29">
+    <defs>
+        <clipPath id="yfy3a">
+            <path fill="#fff" d="M13.994 28.004L2.227 17.367a3.97 3.97 0 0 1 0-5.723L13.994 1.008" />
+        </clipPath>
+    </defs>
+    <g>
+        <g>
+            <path fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="4"
+                d="M13.994 28.004L2.227 17.367a3.97 3.97 0 0 1 0-5.723L13.994 1.008"
+                clip-path="url(&quot;#yfy3a&quot;)" />
+        </g>
+    </g>
+</svg>

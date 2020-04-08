@@ -1,0 +1,46 @@
+.the-best{
+
+    .section-header{
+        text-align: center;
+        margin-bottom: 3.125rem;
+    }
+
+    background-image: url(../image/the-best/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .the-best__items{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .the-best__item{
+        color: $GRAY;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 17.5625rem;
+
+        .the-best__svg{
+            max-width: 90px;
+            width: 100%;
+            text-align: center;
+            svg{
+                height: 90px;
+            }
+        }
+        .the-best__item-headline{
+            text-align: center;
+            margin: 1.875rem 0 1.5625rem;
+            font-family: 'lifehack';
+            font-size: 1.5rem;
+            font-weight: 5;
+        }
+        p{
+            opacity: .8;
+            text-align: center;
+        }
+    }
+}
