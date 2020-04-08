@@ -1,0 +1,46 @@
+{
+  "name": "burgers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniPuh93/Burgers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniPuh93/Burgers/issues"
+  },
+  "homepage": "https://github.com/ViniPuh93/Burgers#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.1.1",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "gulp-smile-px2rem": "^0.1.0",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}
