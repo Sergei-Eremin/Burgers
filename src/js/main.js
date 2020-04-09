@@ -333,7 +333,7 @@ let init = function () {
     let pinCollection = new ymaps.GeoObjectCollection({}, {
         draggable: false,
         iconLayout: 'default#image',
-        iconImageHref: './image/contacts/map-marker.svg',
+        iconImageHref: '../image/contacts/map-marker.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-35, -52],
     })

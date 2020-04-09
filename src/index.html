@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- style -->
+    <!-- inject:css -->
+    
+    <!-- endinject -->
 
-    <link rel="stylesheet" href="./style/main.css">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -16,11 +19,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9c968ae5-c5ce-41bd-bdf3-e07031f98c2e&lang=ru_RU" type="text/javascript">
+    </script>
+
     <title>My Burgers</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <video class="video-bg" autoplay loop muted>
+            <source src="image/video/burger_video.mp4" type="video/mp4">
+        </video>
         <main class="main-content">
             <section class="intro section" id="intro1">
                 <div class="container">
@@ -856,10 +866,10 @@
         </div>
       </script>
       <script src="./js/jquery3.4.1.js"></script>
-      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-      </script>
       <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/main.js"></script>
+      <!-- inject:js -->
+        <!-- endinject -->
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 
 </html>

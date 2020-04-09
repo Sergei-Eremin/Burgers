@@ -14,6 +14,8 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
+const inject = require('gulp-inject');
+
 
 const env = process.env.NODE_ENV;
 
@@ -27,12 +29,31 @@ task( 'clean', ()=> {
 });
 
 task( 'copy:html', ()=> {
-    return src("src/*.html").pipe(dest("dist"))
+    return src("./src/*.html")
+    .pipe(dest("./dist"))
+    .pipe(reload({ stream: true }))
+    
+});
+
+task("copy:fonts", ()=> {
+  return src("./src/fonts/*.+(woff|woff2)")
+    .pipe(dest("./dist/fonts"))
     .pipe(reload({ stream: true }))
 });
 
+task( 'inject', ()=> {
+  let sources = src(['./dist/**/*.css', './dist/**/*.js'], {read: false});
+  return src("./dist/*.html")
+  .pipe(inject(sources, {
+    relative: true
+  }))
+  .pipe(dest("./dist"))
+  .pipe(reload({ stream: true }))
+  
+});
+
 task( 'copy:rastersImage', ()=> {
-  return src("src/image/**/*.+(jpg|jpeg|gif|png)").pipe(dest("dist/image"))
+  return src("src/image/**/*.+(jpg|jpeg|gif|png|svg|mp4)").pipe(dest("dist/image"))
   .pipe(reload({ stream: true }))
 });
 
@@ -43,7 +64,6 @@ task('copy:favicon', () => {
 const necessaryStyles = [
   'node_modules/normalize.css/normalize.css',
   'src/style/main.scss',
-
 ];
 
 task( 'style', ()=> {
@@ -52,7 +72,6 @@ task( 'style', ()=> {
   .pipe(concat('main.min.scss'))
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
-  .pipe(px2rem())
   .pipe(autoprefixer({
     cascade: false,
   }))
@@ -85,17 +104,19 @@ task("svg", () =>{
   .pipe(svgo({
     plugins: [
       {
-        removeAttrs: { attrs: '(fill|stroke|style|width|heigh|data.*)' }
+        removeAttrs: { attrs: '(fill|stroke|style|data.*)' }
       }
     ]
-  }))
+  })
+  )
   .pipe(svgSprite({
     mode: {
       symbol: {
-        sprite: "../sprite.svg"
+        sprite: "sprite.svg"
       }
     }
-  }))
+  })
+  )
   .pipe(dest('dist/image'))
 });
 
@@ -110,9 +131,10 @@ task('server', ()=> {
 
 watch('src/style/**/*.scss', series('style'));
 watch("src/*.html", series('copy:html'));
+watch("src/image/**/*.+(jpg|jpeg|gif|png)", series('copy:rastersImage'));
 watch("src/js/*.js", series('script'));
 watch("src/image/**/*.svg", series('svg'));
 
 
 
-task("default", series("clean", parallel("copy:html", "copy:rastersImage", "copy:favicon", "style", "script", "svg"), "server", ));
+task("default", series("clean", parallel("copy:html", "copy:fonts", "copy:rastersImage", "copy:favicon", "style", "script", "svg"), "inject", "server"));
